@@ -229,26 +229,36 @@ dynamic height=120.0;
               ),
             ),
           ),
-          Container(
-            width: double.infinity,
-            height: 45,
-            child: MaterialButton(onPressed: (){
+          Padding(
+            padding: const EdgeInsetsDirectional.only(start: 20,end: 20,bottom: 20),
+            child: Container(
+              decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(13),color:Colors.blue,
+              ),
 
-                var result=weight/pow(height/100,2);
-                Navigator.push(context, MaterialPageRoute(builder: (context)=>BmiResult(age: age,result: result,isMale: isMale,)
+
+              width: double.infinity,
+
+
+
+              child: MaterialButton(onPressed: (){
+
+                  var result=weight/pow(height/100,2);
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>BmiResult(age: age,result: result,isMale: isMale,)
+                  )
+                  );
+
+              },
+                child: Text(
+                  'CALCULATE',
+                  style: TextStyle(
+                    fontSize: 25,
+                      fontWeight: FontWeight.bold,
+                      color:Colors.white
+                  ),
                 )
-                );
-
-            },
-              child: Text(
-                'CALCULATE',
-                style: TextStyle(
-                  fontSize: 25,
-                    fontWeight: FontWeight.bold,
-                    color:Colors.white
-                ),
-              )
-              ,color:Colors.blue ,
+                 ,
+              ),
             ),
           ),
         ],
