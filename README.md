@@ -26,7 +26,7 @@ https://user-images.githubusercontent.com/79115058/147078296-ce56f066-5d0d-407a-
   </tr>
  </table>
  
- ## bmi
+ ## BMI
  This is bmi calculator application. I made it to learn the all basics of stateless , stateful and material design
  ## video 
  https://user-images.githubusercontent.com/79115058/147079765-449797fe-9e27-41fc-a7a2-0c1a222dd29c.mp4
